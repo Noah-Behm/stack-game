@@ -8,6 +8,7 @@ def print_state(current_state):
     print(f'{" " * 5}{current_state[0][1]:<16}{current_state[1][1]:<16}{current_state[2][1]:<16}')
     print(f'{" " * 5}{current_state[0][2]:<16}{current_state[1][2]:<16}{current_state[2][2]:<16}')
     print("_" * 48)
+    print(" "*8 + "1" + " "*14 + "2" + " "*17 + "3")
 
 
 def select_grab():
@@ -15,7 +16,7 @@ def select_grab():
     ret = ""
 
     while done is False:
-        stack_select = input("Which stack would you like to take from? ")
+        stack_select = input("\n\nWhich stack would you like to take from? ")
         if stack_select not in ['1', '2', '3']:
             print("Please enter a valid choice... i.e. 1, 2, or 3")
         else:
